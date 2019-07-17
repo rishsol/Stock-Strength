@@ -37,5 +37,5 @@ with open('closingPrices.csv', 'a') as csv_file:
 #with open('daily_AAPL.csv') as csvfile:
  #  csvReader = csv.reader(csvfile)
   # for row in page:
-   #  print(row)
+   # print(row)
 
