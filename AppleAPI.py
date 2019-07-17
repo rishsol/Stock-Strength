@@ -18,5 +18,5 @@ with open('latestClosingPrices.csv', 'a') as csv_file:
 
 
 #with open('closingPrices.csv', 'a') as csv_file:
- #   writer = csv.writer(csv_file)
+ #  writer = csv.writer(csv_file)
   #  writer.writecol([difference])
