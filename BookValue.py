@@ -39,7 +39,7 @@ print(equity)
 
 
 #for link in tb.find_all('tr'):
- #   name = link.find('td')
+ #  name = link.find('td')
   #  print(name.get)
 
 #for finance in soup.find_all('tr'):
