@@ -8,17 +8,7 @@ outstandingShares = requests.get(url2).text
 
 bookValuePerShare = shareHolderEquity/outstandingShares
 
-def isOvervalued(bv, price):
-    if(price > bv):
+def isOvervalued(bvps, price):
+    if(price > bvps):
         return True
     return False
-
-
-
-
-
-
-
-
-
-
