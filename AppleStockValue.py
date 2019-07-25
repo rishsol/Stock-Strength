@@ -28,9 +28,8 @@ outstandingShares = float(requests.get(urlso).text)
 bookValuePerShare = shareHolderEquity/outstandingShares
 
 if(isOvervalued(bookValuePerShare, price)):
-    print("AAPL stock price is currently overvalued since its actual stock price is higher than its book value per share. Invest with "
+    print("AAPL stock price may be currently overvalued since its actual stock price is higher than its book value per share. Invest with "
           "caution")
 else:
-    print("AAPL stock price is currently undervalued since its actual stock price is lower than its book value per share. Consider "
+    print("AAPL stock price may be currently undervalued since its actual stock price is lower than its book value per share. Consider "
           "investing in AAPL")
-
