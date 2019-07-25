@@ -12,13 +12,3 @@ def isOvervalued(bv, price):
     if(price > bv):
         return True
     return False
-
-
-
-
-
-
-
-
-
-
