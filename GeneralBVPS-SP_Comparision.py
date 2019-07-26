@@ -8,18 +8,24 @@ def isOvervalued(bvps, price):
         return True
     return False
 
-company = raw_input('Enter the ticker symbol of a company:').strip()
-url = 'https://www.nasdaq.com/symbol/' + company
+try:
+    company = raw_input('Enter the ticker symbol of a company:').strip()
 
-page = requests.get(url)
-page.content
+    url = 'https://www.nasdaq.com/symbol/' + company
 
-soup = BeautifulSoup(page.content, 'html.parser')
-soup.prettify()
+    page = requests.get(url)
+    page.content
 
-price_box = soup.find(attrs={'class', 'qwidget-dollar'})
-price_string = price_box.text
-price = float(price_string.replace("$", ""))
+    soup = BeautifulSoup(page.content, 'html.parser')
+    soup.prettify()
+
+    price_box = soup.find(attrs={'class', 'qwidget-dollar'})
+    price_string = price_box.text
+    price = float(price_string.replace("$", ""))
+
+except:
+    print('Sorry we do not have data for ' + company.upper())
+    exit()
 
 urlshe = 'https://cloud.iexapis.com/v1/stock/' + company + '/balance-sheet/1/shareholderEquity?token=pk_1b777be9dae247b8b83a82df68e086cd'
 shareHolderEquity = float(requests.get(urlshe).text)
@@ -28,12 +34,9 @@ outstandingShares = float(requests.get(urlso).text)
 
 bookValuePerShare = shareHolderEquity/outstandingShares
 
-try:
-    if(isOvervalued(bookValuePerShare, price)):
-        print(company.upper() + ' stock may be overvalued since its actual stock price is higher than its book value per share. Invest with '
+if(isOvervalued(bookValuePerShare, price)):
+    print(company.upper() + ' stock may be overvalued since its actual stock price is higher than its book value per share. Invest with '
           'caution')
-    else:
-        print(company.upper() + ' stock may be undervalued since its actual stock price is lower than its book value per share. Consider '
+else:
+    print(company.upper() + ' stock may be undervalued since its actual stock price is lower than its book value per share. Consider '
       'investing in' + company.upper())
-except:
-    print('Sorry, we do not have data for ' + company.upper())
