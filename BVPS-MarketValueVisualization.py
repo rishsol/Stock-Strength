@@ -25,5 +25,7 @@ for company in companyList:
 
     BVSP_and_SP_Difference = company_price - companyBVPS
 
+plot = seaborn.barplot(company)
+
 
 
