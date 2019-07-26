@@ -12,7 +12,7 @@ page.content
 soup = BeautifulSoup(page.content, 'html.parser')
 soup.prettify()
 
-price_box = soup.find('div', attrs={'class', 'qwidget-dollar'})
+price_box = soup.find(attrs={'class', 'qwidget-dollar'})
 price = price_box.text
 print('Current Apple Stock Price: ' + price)
 

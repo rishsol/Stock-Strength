@@ -16,7 +16,7 @@ page.content
 soup = BeautifulSoup(page.content, 'html.parser')
 soup.prettify()
 
-price_box = soup.find('div', attrs={'class', 'qwidget-dollar'})
+price_box = soup.find(attrs={'class', 'qwidget-dollar'})
 price_string = price_box.text
 price = float(price_string.replace("$", ""))
 
@@ -28,8 +28,8 @@ outstandingShares = float(requests.get(urlso).text)
 bookValuePerShare = shareHolderEquity/outstandingShares
 
 if(isOvervalued(bookValuePerShare, price)):
-    print("AAPL stock may be currently overvalued since its actual stock price is higher than its book value per share. Invest with "
+    print("AAPL stock may be overvalued since its actual stock price is higher than its book value per share. Invest with "
           "caution")
 else:
-    print("AAPL stock may be currently undervalued since its actual stock price is lower than its book value per share. Consider "
+    print("AAPL stock may be undervalued since its actual stock price is lower than its book value per share. Consider "
           "investing in AAPL")
