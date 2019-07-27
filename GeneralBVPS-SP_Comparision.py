@@ -39,4 +39,4 @@ if(isOvervalued(bookValuePerShare, price)):
           'caution')
 else:
     print(company.upper() + ' stock may be undervalued since its actual stock price is lower than its book value per share. Consider '
-      'investing in' + company.upper())
+      'investing in ' + company.upper())
