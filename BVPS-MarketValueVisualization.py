@@ -4,7 +4,7 @@ import seaborn
 import numpy
 import matplotlib.pyplot as plt
 
-companyList = ["AAPL","GOOG", "MSFT", "RLGY"]
+companyList = ["AAPL","GOOG", "MSFT", "RLGY", "PLD", "MAC", "KO"]
 BVSP_and_SP_Difference = list(range(len(companyList)))
 
 i = 0
@@ -34,6 +34,8 @@ for company in companyList:
 
 #plot = seaborn.barplot(x = 'company', y = 'BVPS and Share Price Difference ($)', data =BVSP_and_SP_Difference_array)
 plt.bar(companyList, BVSP_and_SP_Difference)
+plt.xlabel('Company')
+plt.ylabel('Difference in BVPS and Share Price ($)')
 plt.show()
 
 
