@@ -1,7 +1,7 @@
 # Stock-Strength
 I dabble with web scraping and financial APIs to obtain financial data of publicly traded companies (mainly Apple to begin with) and use metrics such as the relative strength index and comparisons of market value and book value of stocks to determine whether investing in the company stock at the moment is worth it.
 
-In conducting my analysis of the book value per share (BVPS) and market price of a company (see image below) it becomes evident that certain sectors have a higher difference between these two metrics than others. Three industries were used in my analysis, with three companies representing each. The industries and companies are outlined below:
+In conducting my analysis of the book value per share (BVPS) and market price of a company (see image below) it becomes evident that certain sectors have a higher difference between these two metrics than others. Three industries were used in my analysis, with three companies representing each industry. The industries and companies are outlined below:
 
 Technology/Software:Apple, Google, Microsoft
 
