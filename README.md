@@ -3,20 +3,11 @@ I dabble with web scraping and financial APIs to obtain financial data of public
 
 In conducting my analysis of the book value per share (BVPS) and market price of a company (see image below) it becomes evident that certain sectors have a higher difference between these two metrics than others. Three industries were used in my analysis, with three companies representing each. The industries and companies are outlined below:
 
-Technology/Software:
-Apple
-Google
-Microsoft
+Technology/Software:Apple, Google, Microsoft
 
-Real Estate:
-Realogy Holdings
-Prologis
-Macerich
+Real Estate: Realogy Holdings, Prologis, Macerich
 
-Food/Beverage:
-Coca-Cola
-Pepsi
-Dr. Pepper
+Food/Beverage:Coca-Cola, Pepsi, Dr. Pepper
 
 ![](StockStrengthGraph.png)
 
