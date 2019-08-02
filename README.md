@@ -15,3 +15,8 @@ Based on the graph, technology companies (the first three companies on the graph
 
 
 The results suggest that pure numerical analysis cannot be enough in determining whether a company is worth investing in. Human sentiment plays a major role in the values of corporations on the stock market. 
+
+
+Please note: to use this code yourself, you must create your own IEX Cloud API account and obtain your own API token. Since I only have the free version, I can no longer access certain data points after a recent update in policy and only have a limited number of calls for data points I can access. 
+
+API URL: https://cloud.iexapis.com/v1/stock/' + company + '/balance-sheet/1/shareholderEquity?token=TOKEN_HERE
