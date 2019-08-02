@@ -3,7 +3,7 @@ I dabble with web scraping and financial APIs to obtain financial data of public
 
 In conducting my analysis of the book value per share (BVPS) and market price of a company (see image below) it becomes evident that certain sectors have a higher difference between these two metrics than others. 
 
-![](/Users/rishabsolanki09@gmail.com/Desktop/Screen Shot 2019-07-31 at 3.52.57 PM.png)
+![](StockStrengthGraph.png)
 
 
 Namely, technology companies (such as Google and Apple) have higher BVPS's relative to their market price than real estate and food and beverage companies (such as Realogy Holdings and Pepsi). This does not mean that the selected technology companeis are overvalued and real estate and food and beverage companies are undervalued. Rather the stark difference between across these sectors suggests higher consumer optimism and customer loyalty in the technology field than in the real estate and food and beverage industries. 
