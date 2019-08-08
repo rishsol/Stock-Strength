@@ -24,10 +24,10 @@ AAPL_Closing.insert(2, 'Change', change)
 
 for value in AAPL_Closing['Change']:
     if(value > 0):
-        gain.append(change)
+        gain.append(value)
         loss.append(0)
     else:
-        loss.append(abs(change))
+        loss.append(abs(value))
         gain.append(0)
 
 gain_average[0] = sum(gain[0:14])/14
@@ -36,7 +36,7 @@ loss_average[0] = sum(loss[0:14])/14
 for i in range(1, len(gain)):
     gain_average[i] = (gain_average[i-1]  * 13 + gain[i])/14
     loss_average[i] = (loss_average[i - 1] * 13 + loss[i]) / 14
-    RSI[i] = gain_average[i]/loss_average[i]
+    RSI[i] = 100 - (100/(1 + gain_average[i]/loss_average[i]))
 
 print(RSI)
 
