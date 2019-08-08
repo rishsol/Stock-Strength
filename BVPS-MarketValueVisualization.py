@@ -9,12 +9,11 @@ BVSP_and_SP_Difference = list(range(len(companyList)))
 
 i = 0
 for company in companyList:
-    urlSHE = 'https://cloud.iexapis.com/v1/stock/' + company + '/balance-sheet/1/shareholderEquity?token=pk_1b777be9dae247b8b83a82df68e086cd'
+    urlSHE = 'https://cloud.iexapis.com/v1/stock/' + company + '/balance-sheet/shareholderEquity?token=pk_1b777be9dae247b8b83a82df68e086cd'
     shareHolderEquity = float(requests.get(urlSHE).text)
 
     urlSO = 'https://cloud.iexapis.com/v1/stock/' + company + '/stats/sharesOutstanding?token=pk_1b777be9dae247b8b83a82df68e086cd'
     sharesOutstanding = float(requests.get(urlSO).text)
-
     companyBVPS = shareHolderEquity/sharesOutstanding
 
     urlSP =  'https://www.nasdaq.com/symbol/' + company
