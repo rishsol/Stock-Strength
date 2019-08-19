@@ -25,6 +25,6 @@ Next, I use the Relative Strength Index (RSI) as another numerical way to analyz
 
 ![](RSIGraph.png)
 
-On the x-axis, 28 will represent today, while 0 represents 28 days before today. During the current period, the RSI value stays between 30 and 70, indicating Apple stock is likely not oversold or overbought.
+On the x-axis, 28 will represent today, while 0 represents 28 days before today (in this case, "today" is 8/19/19). During the current period, the RSI value stays between 30 and 70, indicating Apple stock is likely not oversold or overbought.
 
 To get the data yourself, go to the Alpha Vantage and follow instructions for getting daily closing price data. The function name is TIME_SERIES_DAILY and you will get your own API key. 
