@@ -20,3 +20,11 @@ The results suggest that pure numerical analysis cannot be enough in determining
 Please note: to use this code yourself, you must create your own IEX Cloud API account and obtain your own API token. Since I only have the free version, I can no longer access certain data points after a recent update in policy and only have a limited number of calls for data points I can access. 
 
 API URL example: https://cloud.iexapis.com/v1/stock/COMPANY_NAME/balance-sheet/1/shareholderEquity?token=TOKEN_HERE
+
+Next, I use the Relative Strength Index (RSI) as another numerical way to analyze the value of company stocks (currently for only one company, Apple). Using data of closing prices from the API Alpha Vantage, I calculate the RSI of the company stock for each day over a 28 day period (definition and formula for RSI from https://www.investopedia.com/terms/r/rsi.asp). The results are graphed using Python's matplotlib library. RSI values above 70 may indicate overvalued/overbought stocks and RSI values below 30 may indicate undervalued/oversold stocks. Below is the result for Apple:
+
+![](RSIGraph.png)
+
+During the current period, the RSI value stays between 30 and 70, indicating Apple stock is likely not oversold or overbought.
+
+To get the data yourself, go to the Alpha Vantage and follow instructions for getting daily closing price data. The function name is TIME_SERIES_DAILY and you will get your own API key. 
