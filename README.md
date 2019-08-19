@@ -23,7 +23,7 @@ API URL example: https://cloud.iexapis.com/v1/stock/COMPANY_NAME/balance-sheet/1
 
 Next, I use the Relative Strength Index (RSI) as another numerical way to analyze the value of company stocks (currently for only one company, Apple). Using data of closing prices from the API Alpha Vantage, I calculate the RSI of the company stock for each day over a 28 day period (definition and formula for RSI from https://www.investopedia.com/terms/r/rsi.asp). The results are graphed using Python's matplotlib library. RSI values above 70 may indicate overvalued/overbought stocks and RSI values below 30 may indicate undervalued/oversold stocks. Below is the result for Apple:
 
-![](/Users/rishabsolanki09@gmail.com/Desktop/RSIGraph.png)
+![](RSIGraph.png)
 
 During the current period, the RSI value stays between 30 and 70, indicating Apple stock is likely not oversold or overbought.
 
