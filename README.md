@@ -11,7 +11,7 @@ Food/Beverage:Coca-Cola, Pepsi, Dr. Pepper
 
 ![](StockStrengthGraph.png)
 
-Based on the graph, technology companies (the first three companies on the graph) have higher BVPS's relative to their market price than real estate and food and beverage companies (the middle three companies are real estate companies while the final three are food/beverage companies). This does not mean that the selected technology companies are overvalued and real estate and food and beverage companies are undervalued. Rather the stark difference between across these sectors suggests higher consumer optimism (and perhaps customer loyalty) in the technology field than in the real estate and food and beverage industries. 
+Based on the graph, technology companies (the first three companies on the graph) have higher market prices relative to their BVPS than real estate and food and beverage companies (the middle three companies are real estate companies while the final three are food/beverage companies). This does not mean that the selected technology companies are overvalued and real estate and food and beverage companies are undervalued. Rather the stark difference between across these sectors suggests higher consumer optimism (and perhaps customer loyalty) in the technology field than in the real estate and food and beverage industries. 
 
 
 The results suggest that pure numerical analysis cannot be enough in determining whether a company is worth investing in. Human sentiment plays a major role in the values of corporations on the stock market. 
@@ -25,6 +25,6 @@ Next, I use the Relative Strength Index (RSI) as another numerical way to analyz
 
 ![](RSIGraph.png)
 
-On the x-axis, 28 will represent today, while 0 represents 28 days before today. During the current period, the RSI value stays between 30 and 70, indicating Apple stock is likely not oversold or overbought.
+On the x-axis, 28 will represent today, while 0 represents 28 days before today (in this case, "today" is 8/19/19). During the current period, the RSI value stays between 30 and 70, indicating Apple stock is likely not oversold or overbought.
 
 To get the data yourself, go to the Alpha Vantage and follow instructions for getting daily closing price data. The function name is TIME_SERIES_DAILY and you will get your own API key. 
